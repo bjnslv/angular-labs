@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 
-import { pokemons } from './pokemons';
+import { pokemons } from '../pokemons';
 
 @Component({
   selector: 'app-pokemon-list',
-  templateUrl: './pokemon.component.html',
-  styleUrls: ['./pokemon.component.css']
+  templateUrl: './pokemons.component.html',
+  styleUrls: ['./pokemons.component.css']
 })
-export class HomeComponent {
+export class PokemonsComponent {
   pokemons = pokemons;
 
   share() {
