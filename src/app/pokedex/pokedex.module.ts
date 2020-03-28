@@ -1,16 +1,19 @@
-  
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { PokemonsComponent } from './pokemons/pokemons.component';
-import { PokemonItemComponent } from './pokemon-item/pokemon-item.component';
-
+import { CardComponent } from './card/card.component';
+import { PokemonComponent } from './pokemon/pokemon.component';
+import { NavComponent } from './nav/nav.component';
+import { HomeComponent } from './home/home.component';
+import { CollectionComponent } from './collection/collection.component';
 
 @NgModule({
-  declarations: [PokemonsComponent, PokemonItemComponent],
-  imports: [
-    CommonModule
+  declarations: [
+    CardComponent,
+    PokemonComponent,
+    NavComponent,
+    HomeComponent,
+    CollectionComponent
   ],
-  exports: [PokemonsComponent]
+  imports: [CommonModule]
 })
-export class PokemonModule { }
+export class PokedexModule { }
