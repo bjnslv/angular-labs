@@ -1,26 +1,16 @@
 .card {
-  width: 250px;
-  height: 250px;
+  max-width: 250px;
   text-align: center;
-  margin-bottom: 32px;
-  flex-direction: column;
-  align-items: center;
+  margin: 20px;
   background-image: url("https://cdn5.vectorstock.com/i/1000x1000/69/24/seamless-pattern-pokemon-go-pokeball-background-vector-23236924.jpg");
 }
 .card-header {
-  color: rgb(54, 185, 167);
+  color: rgb(187, 110, 110);
   justify-content: center;
 }
 .damage {
-  color: rgb(233, 221, 221);
+  color: rgb(71, 187, 202);
 }
-
-.damaged {
-  border: 2px dashed rgb(187, 23, 23);
-  color: rgb(187, 23, 23);
-}
-
-.not-damaged {
-  border: 2px solid rgb(46, 194, 53);
-  color:  rgb(46, 194, 53);
+.card-image {
+  max-width: 200px;
 }
