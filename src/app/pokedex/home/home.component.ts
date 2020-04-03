@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { POKEMONS } from '../../pokedb';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  view: string = "gallery";
+  pokemons = POKEMONS;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  toggleView(viewType: string): void {
+    this.view = viewType;
   }
 
 }
