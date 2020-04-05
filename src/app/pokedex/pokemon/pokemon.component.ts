@@ -14,10 +14,10 @@ export class PokemonComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  @Output() catch = new EventEmitter<Pokemon>();
+  @Output() catchPoke = new EventEmitter<Pokemon>();
 
   onCatchBtnClick() {
-    this.catch.emit();
+    this.catchPoke.emit();
   }
 
   getStatus(pokemon: Pokemon): string {
