@@ -1,10 +1,10 @@
 <div>
-  <mat-card class="card" [appBorderStyle]="pokemon.damage">
-    <mat-card-title class="card-header">
-      <mat-card-title>{{pokemon.name}}</mat-card-title>
-      <mat-card-title class="damage">Damage: {{pokemon.damage}}</mat-card-title>
+  <div class="card" [borderStyle]="pokemon.damage">
+    <div class="card-header">
+      <p>{{pokemon.name}}</p>
+      <p class="damage">Damage: {{pokemon.damage}}</p>
       <img class=card-image [src]='"../../../assets/pokemons/" + pokemon.id + ".png"' alt={{pokemon.name}}.png>
-    </mat-card-title>
-    <app-catch-btn [pokemon]="pokemon"></app-catch-btn>
-  </mat-card>
+    </div>
+    <catch-btn [pokemon]="pokemon"></catch-btn>
+  </div>
 </div>
